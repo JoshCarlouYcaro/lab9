@@ -1,15 +1,14 @@
-salary = float(input("Enter montly salary: "))
-loan = float(input("Enter loan amount: "))
-max_loan = salary * 10
-interest = loan * 1.
-if(salary>=30000):
-    if(loan <= max_loan):
-        print("You are eligible for a loan")
-        month = int(input("How many months to pay?: "))
-        monthly = interest / month
-        print(f"Your total loan amount with 10 interest is {interest:.1f}")
-        print(f"Your monthly payment over {month} months is {monthly:.1f}")
-    else:
-        print("You are not eligible for a loan: HIGH LOAN")
+name = str(input("Enter Name"))
+first = float(input("Enter 1st Grade"))
+second = float(input("Enter 2nd Grade"))
+third = float(input("Enter 3rd Grade"))
+average = first + second + third 
+new_average = average/3
+print(new_average)
+
+if new_average>=95:
+    print("Highest Honor")
+if new_average>=85:
+    print("Average Honor")
 else:
-    print("You are not eligible for a loan: LOW SALARY")
+    print("Congrats")    
